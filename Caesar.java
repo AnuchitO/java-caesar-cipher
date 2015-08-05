@@ -17,6 +17,17 @@ public class Caesar {
         byteText[1] = (byte)(byteText[1]+this.shift);        
      }
 
+     if(byteText.length == 3) {
+        byteText[1] = (byte)(byteText[1]+this.shift);        
+        byteText[2] = (byte)(byteText[2]+this.shift);        
+     }
+
+     if(byteText.length == 4) {
+        byteText[1] = (byte)(byteText[1]+this.shift);        
+        byteText[2] = (byte)(byteText[2]+this.shift);        
+        byteText[3] = (byte)(byteText[3]+this.shift);        
+     }
+
      return new String(byteText);
 
    }

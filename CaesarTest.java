@@ -22,8 +22,20 @@ public class CaesarTest {
   }
 
   @Test
-  public void chatAAShift2ShouldBeBB() {
+  public void charAAShift1ShouldBeBB() {
     Caesar caesar = new Caesar("AA", 1);
     assertEquals("BB", caesar.getCipher());
+  }
+
+  @Test
+  public void charAAAShift1ShouldBeBBB() {
+    Caesar caesar = new Caesar("AAA", 1);
+    assertEquals("BBB", caesar.getCipher());
+  }
+
+  @Test
+  public void charAAAAShift2ShouldBeCCCC() {
+    Caesar caesar = new Caesar("AAAA", 2);
+    assertEquals("CCCC", caesar.getCipher());
   }
 }
