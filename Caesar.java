@@ -9,12 +9,20 @@ public class Caesar {
 
 
    public String getCipher() {
+     byte[] byteText = this.text.getBytes();
+      
      if (this.shift == 2) {
-       return "C";
+       byteText[0] = (byte)(byteText[0]+2);        
+       return new String(byteText);
      }
+
      if (this.shift == 3) {
-       return "D";
+       byteText[0] = (byte)(byteText[0]+3);        
+       return new String(byteText);
      }
-     return "B";
+     
+     byteText[0] = (byte)(byteText[0]+1);        
+     return new String(byteText);
+
    }
 }
