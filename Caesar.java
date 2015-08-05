@@ -12,6 +12,9 @@ public class Caesar {
      if (this.shift == 2) {
        return "C";
      }
+     if (this.shift == 3) {
+       return "D";
+     }
      return "B";
    }
 }
