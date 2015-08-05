@@ -20,4 +20,10 @@ public class CaesarTest {
     Caesar caesar = new Caesar("A", 3);
     assertEquals("D", caesar.getCipher());
   }
+
+  @Test
+  public void chatAAShift2ShouldBeBB() {
+    Caesar caesar = new Caesar("AA", 1);
+    assertEquals("BB", caesar.getCipher());
+  }
 }
