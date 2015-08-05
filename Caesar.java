@@ -18,7 +18,7 @@ public class Caesar {
      return new String(byteText);
    }
 
-   private byte getByte(int ascii) {
-     return (byte)(ascii);
+   private byte getByte(Integer ascii) {
+     return ascii.byteValue();
    }
 }
