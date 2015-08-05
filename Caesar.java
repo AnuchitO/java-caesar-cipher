@@ -12,9 +12,13 @@ public class Caesar {
      byte[] byteText = this.text.getBytes();
      
      for (int index = 0;index < byteText.length; index++){
-          byteText[index] = (byte)(byteText[index]+this.shift);        
+          byteText[index] = getByte(byteText[index]+this.shift);        
      } 
 
      return new String(byteText);
+   }
+
+   private byte getByte(int ascii) {
+     return (byte)(ascii);
    }
 }
