@@ -38,4 +38,10 @@ public class CaesarTest {
     Caesar caesar = new Caesar("AAAA", 2);
     assertEquals("CCCC", caesar.getCipher());
   }
+
+  @Test
+  public void charABCDEShift1ShouldBeBCDEF() {
+    Caesar caesar = new Caesar("ABCDE", 1);
+    assertEquals("BCDEF", caesar.getCipher());
+  }
 }
