@@ -21,4 +21,10 @@ public class CaesarTest {
     assertEquals("CCCC", encryptText("AAAA", 2));
     assertEquals("BCDEF", encryptText("ABCDE", 1));
   }
+
+  @Test
+  public void charZShift1ShoudlBeA() {
+    assertEquals("A", encryptText("Z", 1));
+  }
+
 }
