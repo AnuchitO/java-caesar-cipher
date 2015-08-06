@@ -27,4 +27,9 @@ public class CaesarTest {
     assertEquals("A", encryptText("Z", 1));
   }
 
+  @Test
+  public void charZShift1ShoudlBeB() {
+    assertEquals("B", encryptText("Z", 2));
+  }
+
 }
