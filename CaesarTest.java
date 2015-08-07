@@ -41,18 +41,18 @@ public class CaesarTest {
   public void charZShift4ShoudlBeE() {
     assertEquals("D", encryptText("Z", 4));
   }
-//  @Test
-//  public void charYShift1ShoudlBeZ() {
-//    assertEquals("Z", encryptText("Y", 1));
-//  }
-//
-//  @Test
-//  public void charYShift2ShoudlBeA() {
-//    assertEquals("A", encryptText("Y", 2));
-//  }
-//  
-//  @Test
-//  public void charYShift3ShoudlBeB() {
-//    assertEquals("B", encryptText("Y", 3));
-//  }
+  @Test
+  public void charYShift1ShoudlBeZ() {
+    assertEquals("Z", encryptText("Y", 1));
+  }
+
+  @Test
+  public void charYShift2ShoudlBeA() {
+    assertEquals("A", encryptText("Y", 2));
+  }
+  
+  @Test
+  public void charYShift3ShoudlBeB() {
+    assertEquals("B", encryptText("Y", 3));
+  }
 }

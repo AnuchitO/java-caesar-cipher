@@ -23,6 +23,9 @@ public class Caesar {
 		return (byte)((65 + (90+this.shift-65)%26));
 	   }
 
+	   if (ascii == 'Y') {
+		return (byte)((65 + (89+this.shift-65)%26));
+	   }
      return new Integer(ascii+this.shift).byteValue();
    }
 }
