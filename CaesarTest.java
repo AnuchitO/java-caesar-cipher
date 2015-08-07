@@ -55,4 +55,9 @@ public class CaesarTest {
   public void charYShift3ShoudlBeB() {
     assertEquals("B", encryptText("Y", 3));
   }
+
+  @Test  
+  public void charXShift7ShoudlBeX() {
+    assertEquals("EFC", encryptText("ZAX", 5));
+  }
 }

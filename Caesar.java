@@ -19,6 +19,6 @@ public class Caesar {
    }
 
    private byte shiftText(byte ascii) {
-	return new Integer(65 + (ascii+this.shift-65)%26).byteValue();
+	return new Integer('A' + (ascii + this.shift - 'A')%26).byteValue();
    }
 }
