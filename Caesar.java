@@ -19,9 +19,24 @@ public class Caesar {
    }
 
    private byte shiftText(byte ascii) {
-	   if ((char)(ascii) == 'Z'){
-		   return (byte)(64 + this.shift);
+	   if (ascii == 'Z') {
+	   	if (this.shift == 1 ) {
+		   return (byte)((65 + 0));
+	         }
+
+	   	if (this.shift == 2 ) {
+		   return (byte)((65 + (90+2-65)%26));
+	         }
+		
+	   	if (this.shift == 3 ) {
+		   return (byte)((65 + (90+3-65)%26));
+	         }
+		
+	   	if (this.shift == 4 ) {
+		   return (byte)((65 + (90+4-65)%26));
+	         }
 	   }
+
      return new Integer(ascii+this.shift).byteValue();
    }
 }
